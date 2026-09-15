@@ -33,14 +33,15 @@ class RoboEyesApp {
   }
 
   resizeCanvas() {
-    const canvas = this.canvas;
-
     const width = window.innerWidth;
     const height = window.innerHeight;
 
-    if (canvas.width !== width || canvas.height !== height) {
-      canvas.width = width;
-      canvas.height = height;
+    if (
+      this.canvas.width !== width ||
+      this.canvas.height !== height
+    ) {
+      this.canvas.width = width;
+      this.canvas.height = height;
     }
   }
 
