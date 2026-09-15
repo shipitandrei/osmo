@@ -10,7 +10,7 @@
 
   <meta name="theme-color" content="#000000">
 
-  <title>Osmo</title>
+  <title>Robo Eyes</title>
 
   <style>
     * {
@@ -81,6 +81,8 @@
       display: block;
     }
 
+    /* Hide the desktop UI while keeping the elements
+       that main.js expects in the DOM. */
     .preview-section h1,
     .preview-section .subtitle,
     .status,
@@ -95,9 +97,10 @@
   <div class="preview-section">
 
     <div class="oled-display">
-      <canvas id="eye-canvas"></canvas>
+      <canvas id="eye-canvas" width="320" height="180"></canvas>
     </div>
 
+    <!-- Kept because main.js may reference it -->
     <div class="status" id="fps"></div>
 
   </div>
