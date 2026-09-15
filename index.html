@@ -45,17 +45,8 @@
       margin: 0;
       padding: 0;
 
-      display: block;
-
       background: #000;
       overflow: hidden;
-    }
-
-    .preview-section h1,
-    .preview-section .subtitle,
-    .status,
-    .settings-section {
-      display: none;
     }
 
     .oled-display {
@@ -71,8 +62,6 @@
       margin: 0;
       padding: 0;
 
-      display: block;
-
       background: #000;
 
       border: none;
@@ -80,10 +69,6 @@
       box-shadow: none;
 
       overflow: hidden;
-    }
-
-    .oled-display::before {
-      display: none;
     }
 
     #eye-canvas {
@@ -94,6 +79,13 @@
       height: 100%;
 
       display: block;
+    }
+
+    .preview-section h1,
+    .preview-section .subtitle,
+    .status,
+    .settings-section {
+      display: none;
     }
   </style>
 </head>
@@ -109,8 +101,6 @@
     <div class="status" id="fps"></div>
 
   </div>
-
-  <div class="settings-section"></div>
 
   <script type="module" src="/src/main.js"></script>
 
